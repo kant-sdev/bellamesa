@@ -5,7 +5,6 @@ import Link from "next/link"
 import ToggleMenu from "./ToggleMenu"
 
 export default function Header() {
-    const [isOpen, setIsOpen] = useState(false)
     const [isScrolled, setIsScrolled] = useState(false)
 
     useEffect(() => {
@@ -21,9 +20,7 @@ export default function Header() {
         return () => window.removeEventListener("scroll", handleScroll)
     }, [])
 
-    const toggleMenu = () => {
-        setIsOpen(!isOpen)
-    }
+
 
     const navLinks = [
         { name: "Início", href: "#hero" },
