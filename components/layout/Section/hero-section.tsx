@@ -15,7 +15,7 @@ export default function HeroSection() {
                         Sabores autênticos, ingredientes frescos e a tradição da culinária italiana em cada prato.
                     </p>
                     <div className="flex flex-col sm:flex-row justify-center gap-4">
-                        <Link href="#menu" className="btn-primary">
+                        <Link href="/menu" className="btn-primary">
                             Ver Cardápio
                         </Link>
                         <Link href="#contact" className="btn-secondary">

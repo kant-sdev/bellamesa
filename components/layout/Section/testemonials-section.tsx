@@ -32,9 +32,9 @@ export default function TestimonialsSection() {
                     {testimonials.map((testimonial) => (
                         <div key={testimonial.id} className="bg-white/10 backdrop-blur-sm p-8 rounded-lg border border-white/20">
                             <div className="flex mb-4">
-                                {[...Array(testimonial.rating)].map((i) => (
-                                    <Star key={i} className="w-5 h-5 fill-primary text-primary" />
-                                ))}
+                                {[...Array(testimonial.rating)].map((star, index) => (
+                                    <Star key={index} className="w-5 h-5 fill-primary text-primary" />
+                                ))} 
                             </div>
                             <p className="text-white text-lg italic mb-6">&quot;{testimonial.text}&quot;</p>
                             <p className="text-primary font-semibold">– {testimonial.name}</p>

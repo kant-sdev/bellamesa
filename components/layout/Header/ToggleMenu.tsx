@@ -4,11 +4,11 @@ import Link from "next/link";
 import React from "react";
 
 const navLinks = [
-    { name: "Início", href: "#hero" },
-    { name: "Sobre Nós", href: "#about" },
-    { name: "Cardápio", href: "#menu" },
-    { name: "Depoimentos", href: "#testimonials" },
-    { name: "Contato & Reservas", href: "#contact" },
+    {  id: 1, name: "Início", href: "#hero" },
+    { id: 2, name: "Sobre Nós", href: "#about" },
+    { id: 3, name: "Cardápio", href: "#menu" },
+    { id: 4, name: "Depoimentos", href: "#testimonials" },
+    { id: 5, name: "Contato & Reservas", href: "#contact" },
 ]
 
 export default function ToggleMenu() {
@@ -29,7 +29,7 @@ export default function ToggleMenu() {
                     <div className="grid grid-cols-1 place-items-start px-6 gap-y-2">
                         {navLinks.map((link) => (
                             <Link
-                                key={link.name}
+                                key={link.id}
                                 href={link.href}
                                 className="text-white text-lg hover:text-primary transition-colors duration-300"
                             >
