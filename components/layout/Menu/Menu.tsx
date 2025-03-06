@@ -5,8 +5,6 @@ import MenuLogged from './MenuLogged'
 
 
 export default function Menu() {
-    const isLogged = false
-
     const entradas = getEntradas()
     const pratosIniciais = getPratosIniciais()
     const pratosPrincipais= getPratosPrincipais()
