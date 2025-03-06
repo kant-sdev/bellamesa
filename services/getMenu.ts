@@ -1,9 +1,9 @@
 import { entradas } from "@/data/entradas"
 import { pizzas } from "@/data/pizzas"
-import { pratosPrincipais } from "@/data/pratos-principais"
-import { pratosIniciais } from "@/data/primeiros-pratos"
 import { sobremesas } from "@/data/sobremesas"
 import { drinks } from "@/data/drinks"
+import { pratosIniciais } from "@/data/primeirosPratos"
+import { pratosPrincipais } from "@/data/pratosPrincipais"
 
 const menuMap: Record<string, any[]> = {
     "Entradas": entradas,
