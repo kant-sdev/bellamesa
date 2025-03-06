@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button'
-import { LogOutIcon } from 'lucide-react'
+import { LogOutIcon, UserIcon } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
 
@@ -33,7 +33,7 @@ export default function HeaderLogged() {
                         </div>
                     ) : (
                         <div className='flex items-center  gap-6'>
-                            <Button className='btn-primary text-lg  font-bold'>Login</Button>
+                            <Button className='btn-primary text-lg  font-bold'> Login</Button>
                         </div>
                     )
                 }

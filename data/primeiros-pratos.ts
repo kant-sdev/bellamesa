@@ -1,6 +1,6 @@
 import { MenuItem } from "@/types/menu";
 
-export const primeirosPratos:MenuItem [] = [
+export const pratosIniciais:MenuItem [] = [
     {
         "id": 1,
         "nome": "Spaghetti alla Carbonara",
