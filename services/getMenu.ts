@@ -14,4 +14,4 @@ const menuMap: Record<string, any[]> = {
     "Drinks": drinks
 }
 
-export const useMenu = (categoria: string) => menuMap[categoria] || []
+export const Menu = (categoria: string) => menuMap[categoria] || []

@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { Sidebar } from "../Cards/Sidebar"
 import { ConteudoCategoria } from "./Conteudo"
-import { useMenu } from "@/services/getMenu"
+import { Menu } from "@/services/getMenu"
 
 type Categoria = {
     id: number
@@ -22,14 +22,14 @@ const categorias: Categoria[] = [
 export default function MenuCategorias() {
     const [categoriaSelecionadaId, setCategoriaSelecionadaId] = useState<number>(categorias[0].id)
     const categoriaSelecionada = categorias.find((c) => c.id === categoriaSelecionadaId)!
-    const produtos = useMenu(categoriaSelecionada.nome)
+    const produtos = Menu(categoriaSelecionada.nome)
 
     return (
         <div className="flex flex-col md:flex-row gap-6">
             <Sidebar
                 categorias={categorias.map((categoria) => ({
                     ...categoria,
-                    quantidade: useMenu(categoria.nome).length, 
+                    quantidade: Menu(categoria.nome).length, 
                 }))}
                 categoriaSelecionadaId={categoriaSelecionadaId}
                 onSelecionarCategoria={setCategoriaSelecionadaId}
