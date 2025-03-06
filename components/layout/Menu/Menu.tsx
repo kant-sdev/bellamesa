@@ -1,5 +1,4 @@
 import React from 'react'
-import { Separator } from '@/components/ui/separator'
 import MenuCategorias from './MenuCategoria'
 
 export default function Menu() {
