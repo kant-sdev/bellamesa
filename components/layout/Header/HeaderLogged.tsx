@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button'
-import { LogOutIcon, UserIcon } from 'lucide-react'
+import { LogOutIcon } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
 
@@ -22,7 +22,6 @@ export default function HeaderLogged() {
                         </Link>
                     )
                 }
-
 
 
                 {
