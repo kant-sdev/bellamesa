@@ -4,7 +4,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { MenuItem } from "@/types/menu";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import React  from "react";
 
 type Props = {
     data: MenuItem[];

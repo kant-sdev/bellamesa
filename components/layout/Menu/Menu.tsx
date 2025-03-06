@@ -3,7 +3,6 @@ import { Separator } from '@/components/ui/separator'
 import { getDrinks, getEntradas, getPizzas, getPratosIniciais, getPratosPrincipais, getSobremesas } from '@/services/getMenu'
 import MenuLogged from './MenuLogged'
 
-
 export default function Menu() {
     const entradas = getEntradas()
     const pratosIniciais = getPratosIniciais()
